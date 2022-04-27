@@ -1,20 +1,26 @@
 //Program to find greatest element in array:
-
-
+//Write a program to calculate the sum of the first and the second last digit of a 5 digit.
+//E.g.- NUMBER : 12345
+//OUTPUT : 1+4=5
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n;
-    cout<<"enter size of array"<<endl;
+    int n,a,b,c,d,e;
+    cout<<"enter five digit number:"<<endl;
     cin>>n;
-    cout<<"enter the elements of array:"<<endl;
-    int a[n];
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-        if(a[0]<a[i])
-        a[0]=a[i];
-    }
-    cout<<"largest element:"<<a[0]<<endl;
+    a=n/10000;
+    n=n%10000;
+    b=n/1000;
+    n=n%1000;
+    c=n/100;
+    n=n%100;
+    d=n/10;
+    e=n%10;
+    int sum=b+d;
+    cout<<"sum: "<<b<<" + "<<d<<"="<<sum<<endl;
 }
+    
+    
+    
+    
